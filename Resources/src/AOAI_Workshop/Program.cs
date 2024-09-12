@@ -87,7 +87,8 @@ app.MapPost("/chat", async (
     [FromBody] ChatRequest chatRequest,
     [FromServices] Kernel kernel) => {
 
-
+        // Challenge 2 Completed
+        
         //Convert chat history from client to Semantic Kernel ChatHistory collection
         var chatHistory = ExtractHistory(chatRequest);
 
